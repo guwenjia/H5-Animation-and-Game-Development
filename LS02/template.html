@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <title>Canvas 执行上下文（context） </title>
     <script type="text/javascript">
-        window.addEventListener('load', eventWindowLoaded, false);
+        window.addEventListener('load', eventWindowLoaded, false);//js事件流 false：阻止事件捕获
         function eventWindowLoaded() {
             canvasApp();
         }
+
         function canvasApp() {
             var theCanvas = document.getElementById('canvas');
             var context = theCanvas.getContext('2d');
+            
         }
 </script>
 </head>

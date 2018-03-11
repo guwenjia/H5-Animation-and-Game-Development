@@ -45,7 +45,7 @@
             ctx.fillStyle = 'tomato';
             ctx.arc(cx, cy, radius, 0, Math.PI * 2, false);
             ctx.fill(); 
-            ctx.clip(); 
+            ctx.clip(); //剪切后，新绘制的图形将限定在此剪切区域
             
             // 绘制第二个圆 
             ctx.beginPath(); ctx.fillStyle = '#333';
@@ -59,7 +59,7 @@
             ctx.arc(cx, cy + 100, radius, 0, Math.PI * 2, false);
             ctx.fill(); 
             //ctx.clip();
-            ctx.restore();
+            ctx.restore();//状态恢复
             
             // 绘制第四个圆 
             ctx.beginPath();
